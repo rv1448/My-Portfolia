@@ -130,14 +130,14 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.25; }
   body#bg-img {
     background: url(../img/rover3.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -146,12 +146,18 @@ body {
       z-index: -1;
       background: rgba(68, 68, 68, 0.8); }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
     font-size: 6rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1 rem;
     background: rgba(73, 73, 73, 0.3); }
@@ -185,5 +191,18 @@ main {
 
 .about-info {
   display: grid;
-  grid-template-areas: 'bio image bio bio' 'job1 job2';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio"   "job1 job2";
+  grid-template-columns: repeat(2, 1fr); }
+
+.bio-image {
+  grid-area: bioimage;
+  margin: 5px;
+  border: #eece1a 3px solid; }
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem; }
+
+.job-1 {
+  grid-area: job1; }
