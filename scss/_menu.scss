@@ -53,7 +53,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.975;
     visibility: hidden;
 
     &.show{
@@ -100,11 +100,15 @@
   
 
         .portrait{
+            // position: absolute;
             width: 250px;
-            height: 250px;
-            background: url('../img/rover1.jpg');
+            height: 250px; 
+            background: url('../img/rsz_1snapseed.jpg');
             border-radius: 50%;
             border: solid 3px $secondary-color; 
+            background-size: cover;
+            // background: center;
+            
         }
     }
 
