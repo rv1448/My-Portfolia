@@ -3,7 +3,7 @@ $colortes: #555;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/rover3.jpg);
-$background-opacity: 0.8;
+$background-opacity: 0.85;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -17,7 +17,7 @@ $background-opacity: 0.8;
       background-size: cover;
       // .overlay
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         right: 0;
