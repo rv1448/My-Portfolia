@@ -168,11 +168,12 @@ main {
     grid-template-areas: "bioimage bio"   "job1 job2";
     grid-template-columns: repeat(2, 1fr); }
   main .bio-image {
+    grid-area: bioimage;
     width: 275px;
     height: 250px;
     margin: auto;
     border-radius: 50%;
-    border: solid 3px #eece1a;
+    border: solid 2px #eece1a;
     background-size: cover; }
   main .bio {
     grid-area: bio;
