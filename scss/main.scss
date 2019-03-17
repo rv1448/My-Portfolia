@@ -149,15 +149,35 @@ main {
 .projects{
   display: grid;
   grid-gap: 0.7rem;
+  // // Added Below  
+  // grid-template-areas: 
+  //   "item1" 
+  //   "item2"
+  //   "item3"
+  //   ;
+  // //Added above 
   grid-template-columns: repeat(3, 1fr);
 
-img {
+img { 
   width: 100%;
   border: 3px #fff;
   &:hover{
   opacity: 0.5;
   border-color: $secondary-color;
   @include easeOut;
+// Adding Below 
+// .text-block {
+//   position: absolute;
+//   bottom: 20px;
+//   right: 20px;
+//   background-color: black;
+//   color: white;
+//   padding-left: 20px;
+//   padding-right: 20px;
+// }
+// Adding above 
+
+
 
   }
 }
