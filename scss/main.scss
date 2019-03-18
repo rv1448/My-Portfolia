@@ -14,7 +14,7 @@ body {
   //  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   // font-family: 'Gill Sans';
-  font: 400 16px 'Work Sans', sans-serif;
+  font: 400 16px "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
 }
@@ -54,8 +54,8 @@ header {
 
 main {
   padding: 4rem;
-    // height: 100%;
-   min-height: calc(100vh-60px);
+  // height: 100%;
+  min-height: calc(100vh-60px);
   .icons {
     margin-top: 1rem;
     a {
@@ -63,7 +63,6 @@ main {
       @include easeOut();
       &:hover {
         color: $secondary-color;
-       
       }
     }
   }
@@ -73,72 +72,65 @@ main {
     h1 {
       margin-top: 20vh;
     }
-    
   }
 
   &#about {
     overflow: hidden;
-     
-    
   }
 
-
-
-  .about-info { 
+  .about-info {
     overflow: visible;
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-      "bioimage bio"  
+      "bioimage bio"
       "job1 job2";
     grid-template-columns: repeat(2, 1fr);
-    
   }
-  
-  .bio-image{
+
+  .bio-image {
     grid-area: bioimage;
-    //   // margin: 5px;  // Commented and put below 
+    //   // margin: 5px;  // Commented and put below
     // margin: auto;
     // border-radius: 50%;
     // // border-radius: 50%;
     // border:$secondary-color 3px solid
-  // below is the update 
-  width: 275px;
-  height: 250px; 
-  margin: auto;
-  // background: url('../img/rsz_1img_5792.jpg');
-  border-radius: 50%;
-  border: solid 2px $secondary-color; 
-  background-size: cover; 
-  
+    // below is the update
+    width: 275px;
+    height: 250px;
+    margin: auto;
+    // background: url('../img/rsz_1img_5792.jpg');
+    border-radius: 50%;
+    border: solid 2px $secondary-color;
+    background-size: cover;
   }
-  .bio{
+  .bio {
     grid-area: bio;
-    font-size: 1.25rem;  // from 1.0
+    font-size: 1.25rem; // from 1.0
   }
-  .job-1{
-  grid-area: job1;
-        .datest{
-        // width: 100%;
-        // height: 50%;
-        // padding-right: 0px;
-        background:$primary-color;
-        background: fade-in($primary-color, $amount: 0)
-        // border: 2px dashed rgba(236, 198, 48, 0.5);
-        }
-  }
-  .job-2{
-    grid-area: job2;
-    .datest{
+  .job-1 {
+    grid-area: job1;
+    .datest {
       // width: 100%;
       // height: 50%;
       // padding-right: 0px;
-      background:$primary-color;
-      background: fade-in($primary-color, $amount: 0)
+      background: $primary-color;
+      background: fade-in($primary-color, $amount: 0);
       // border: 2px dashed rgba(236, 198, 48, 0.5);
-      }
     }
-  
+  }
+  .job-2 {
+    grid-area: job2;
+    .datest {
+      // width: 100%;
+      // height: 50%;
+      // padding-right: 0px;
+      background: $primary-color;
+      background: fade-in($primary-color, $amount: 0);
+      // border: 2px dashed rgba(236, 198, 48, 0.5);
+    }
+  }
+
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
@@ -146,53 +138,49 @@ main {
   }
 }
 
-.projects{
+.projects {
   display: grid;
   grid-gap: 0.7rem;
-  // // Added Below  
-  // grid-template-areas: 
-  //   "item1" 
+  // // Added Below
+  // grid-template-areas:
+  //   "item1"
   //   "item2"
   //   "item3"
   //   ;
-  // //Added above 
+  // //Added above
   grid-template-columns: repeat(3, 1fr);
 
-img { 
-  width: 100%;
-  border: 3px #fff;
-  &:hover{
-  opacity: 0.5;
-  border-color: $secondary-color;
-  @include easeOut;
-// Adding Below 
-// .text-block {
-//   position: absolute;
-//   bottom: 20px;
-//   right: 20px;
-//   background-color: black;
-//   color: white;
-//   padding-left: 20px;
-//   padding-right: 20px;
-// }
-// Adding above 
-
-
-
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+      // Adding Below
+      // .text-block {
+      //   position: absolute;
+      //   bottom: 20px;
+      //   right: 20px;
+      //   background-color: black;
+      //   color: white;
+      //   padding-left: 20px;
+      //   padding-right: 20px;
+      // }
+      // Adding above
+    }
   }
 }
-}
- 
-//Contact Page 
-.boxes{
+
+//Contact Page
+.boxes {
   // display: inline-flex;
   // flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem;
-  
-  
-  div{
+  margin-top: 1 rem;
+
+  div {
     font-size: 1.25rem;
     // border: 1px #fff solid;
     padding: 0.5rem 1rem;
@@ -210,39 +198,47 @@ img {
   }
 }
 
-//Button styles 
-.btn{
-  // display: block;
+//Button styles
+.btn {
+  display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
-  &:hover{
+  &:hover {
     background: $secondary-color;
     color: set-text-color($secondary-color);
-
   }
 }
 
-.btn-dark{
-@extend .btn;
-background: darken($primary-color, 50);
-color:#fff;
-
-
-}
-.btn-light{
+.btn-dark {
   @extend .btn;
-  background: lighten($color:$primary-color, $amount: 50);
-color:#333;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+.btn-light {
+  @extend .btn;
+  background: lighten($color: $primary-color, $amount: 50);
+  color: #333;
 }
 
-#main-footer{
+#main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color,  10);
+  background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
 }
+@import "mobile";
+// @media screen and (max-width: 500px) {
+//   main {
+//     padding: 2rem; }
+//     main #home h1 {
+//       margin-top: 10vh; }
+//     main .lg-heading {
+//       margin-top: 1rem;
+//       font-size: 5rem; }
+//   .projects {
+//     grid-template-columns: 1fr; } }
 
 // .top-left{
 //   position: absolute;
@@ -250,7 +246,6 @@ color:#333;
 //   left: 16px;
 // }
 
-@import "mobile";
 // .job-2{
 //   grid-area: job2;
 //   }
