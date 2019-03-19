@@ -162,7 +162,7 @@ main {
   main#about {
     overflow: hidden; }
   main .about-info {
-    overflow: visible;
+    overflow: hidden;
     display: grid;
     grid-gap: 30px;
     grid-template-areas: "bioimage bio" "job1 job2";
@@ -272,7 +272,6 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2';
-    background: url("../img/IMG_5791 copy.jpg");
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
