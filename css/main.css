@@ -266,7 +266,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/IMG_5791 copy.jpg");
+      background: url("../img/IMG_5791_copy.jpg");
       background-size: cover;
       width: 150px;
       height: 150px; }
@@ -279,6 +279,14 @@ main {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/IMG_5791_copy.jpg");
+      background-size: cover;
+      width: 140px;
+      height: 110px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2";
     grid-template-columns: 1fr; }
